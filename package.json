@@ -1,5 +1,5 @@
 {
-  "name": "lm-timetable",
+  "name": "schedule-api",
   "version": "0.0.1",
   "description": "REST API around a MongoDB store containing timetables",
   "main": "app.js",
