@@ -1,0 +1,20 @@
+{
+  "name": "lm-timetable",
+  "version": "0.0.1",
+  "description": "REST API around a MongoDB store containing timetables",
+  "main": "app.js",
+  "engines" : {
+      "node" : "0.8",
+      "npm" : "1.1.x"
+  },
+  "author": "ThibWeb",
+  "dependencies": {
+    "mongoose": "3.5.7",
+    "express": "3.4.x"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+}
+
