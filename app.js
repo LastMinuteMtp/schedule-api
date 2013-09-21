@@ -36,7 +36,7 @@ var scheduleSchema = new mongoose.Schema({
 
 var Schedule = mongoose.model('schedules', scheduleSchema);
 
-app.get('/schedule/:parameter/:value', function (req, resp) {
+app.get('/schedule/for/:parameter/:value', function (req, resp) {
   var query = Schedule.find({});
   query.where(req.params.parameter).equals(decodeURIComponent(req.params.value));
   query.exec(function (err, result) {
@@ -55,6 +55,16 @@ app.get('/count', function (req, resp) {
     resp.send(result.toString() + ' items in DB');
   });
 });
+
+app.get('/schedule/at/:time', function (req, resp) {
+  var query = Schedule.find({});
+  console.log('here !');
+  query.where("departure_time").regex("06:59:40");
+  query.exec(function (err, result) {
+    resp.send(result);
+  });
+});
+
 
 var port = process.env.PORT || 9000;
 app.listen(port, function() {
