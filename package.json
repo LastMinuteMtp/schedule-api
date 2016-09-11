@@ -7,7 +7,7 @@
       "node" : "0.8",
       "npm" : "1.1.x"
   },
-  "author": "ThibWeb",
+  "author": "Thibaud Colas <thibaudcolas@gmail.com> (https://github.com/thibaudcolas)",
   "dependencies": {
     "mongoose": "3.5.7",
     "express": "3.4.x"
